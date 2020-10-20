@@ -7,6 +7,7 @@ public class Rectangle extends Shape {
 	public Rectangle(int width, int length) {
 		this.setiWidth(width);
 		this.setiLength(length);
+		System.out.println("x");
 	}
 
 	public int getiWidth() {

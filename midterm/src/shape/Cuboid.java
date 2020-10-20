@@ -30,6 +30,14 @@ public class Cuboid extends Rectangle{
 	}
 	
 	public int compareTo(Object obj) {
-		return 0;
+		if (((Cuboid) obj).volume() > this.volume()) {
+			return -1;
+		}
+		else if (((Cuboid) obj).volume() < this.volume()) {
+			return 1;
+		}
+		else {
+			return 0;
+		}
 	}
 }
